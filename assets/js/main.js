@@ -11,6 +11,12 @@ let bg2 = document.querySelectorAll("main > div > div");
         input.setAttribute("type", "color")
 
         bg[i].appendChild(input);
+        
+        bg[i].addEventListener("change", function(e){
+            
+            bg[i].style.backgroundColor = event.target.value;
+
+        });
     }
 
 /*********************************/
